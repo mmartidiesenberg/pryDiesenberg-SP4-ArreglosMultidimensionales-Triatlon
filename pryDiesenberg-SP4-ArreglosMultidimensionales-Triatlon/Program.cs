@@ -16,7 +16,7 @@ namespace pryDiesenberg_SP4_ArreglosMultidimensionales_Triatlon
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new frmTriatlon());
         }
     }
 }
