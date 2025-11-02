@@ -63,6 +63,7 @@
             this.colNumero,
             this.colNombre,
             this.colPais});
+            this.dgvParticipantes.GridColor = System.Drawing.Color.MistyRose;
             this.dgvParticipantes.Location = new System.Drawing.Point(12, 25);
             this.dgvParticipantes.Name = "dgvParticipantes";
             this.dgvParticipantes.Size = new System.Drawing.Size(301, 155);
@@ -104,6 +105,7 @@
             this.colLuis,
             this.colMarcos,
             this.colDiego});
+            this.dgvPosiciones.GridColor = System.Drawing.Color.MistyRose;
             this.dgvPosiciones.Location = new System.Drawing.Point(12, 199);
             this.dgvPosiciones.Name = "dgvPosiciones";
             this.dgvPosiciones.Size = new System.Drawing.Size(692, 103);
@@ -170,6 +172,7 @@
             this.colNombre2,
             this.colPais2,
             this.colPuntos});
+            this.dgvGanadores.GridColor = System.Drawing.Color.MistyRose;
             this.dgvGanadores.Location = new System.Drawing.Point(12, 321);
             this.dgvGanadores.Name = "dgvGanadores";
             this.dgvGanadores.Size = new System.Drawing.Size(400, 95);
@@ -219,6 +222,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LavenderBlush;
             this.ClientSize = new System.Drawing.Size(718, 428);
             this.Controls.Add(this.btnDeterminar);
             this.Controls.Add(this.btnAsignar);
@@ -228,8 +232,10 @@
             this.Controls.Add(this.dgvPosiciones);
             this.Controls.Add(this.lblParticipantes);
             this.Controls.Add(this.dgvParticipantes);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmTriatlon";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Triatlón";
             this.Load += new System.EventHandler(this.frmTriatlon_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvParticipantes)).EndInit();
