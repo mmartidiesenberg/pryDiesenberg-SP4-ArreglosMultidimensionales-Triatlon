@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTriatlon));
             this.dgvParticipantes = new System.Windows.Forms.DataGridView();
             this.colNumero = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -66,6 +67,7 @@
             this.dgvParticipantes.Name = "dgvParticipantes";
             this.dgvParticipantes.Size = new System.Drawing.Size(301, 155);
             this.dgvParticipantes.TabIndex = 0;
+            this.dgvParticipantes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvParticipantes_CellContentClick);
             // 
             // colNumero
             // 
@@ -201,6 +203,7 @@
             this.btnAsignar.TabIndex = 6;
             this.btnAsignar.Text = "Asignar Participantes";
             this.btnAsignar.UseVisualStyleBackColor = true;
+            this.btnAsignar.Click += new System.EventHandler(this.btnAsignar_Click);
             // 
             // btnDeterminar
             // 
@@ -210,6 +213,7 @@
             this.btnDeterminar.TabIndex = 7;
             this.btnDeterminar.Text = "Determinar Ganadores";
             this.btnDeterminar.UseVisualStyleBackColor = true;
+            this.btnDeterminar.Click += new System.EventHandler(this.btnDeterminar_Click);
             // 
             // frmTriatlon
             // 
@@ -224,6 +228,7 @@
             this.Controls.Add(this.dgvPosiciones);
             this.Controls.Add(this.lblParticipantes);
             this.Controls.Add(this.dgvParticipantes);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmTriatlon";
             this.Text = "Triatlón";
             this.Load += new System.EventHandler(this.frmTriatlon_Load);
